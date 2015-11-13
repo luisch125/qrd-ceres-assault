@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e0fa03c92e48e22488910722f0e6acdc
+timeCreated: 1441826885
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - enemigoNivel1Basico: {instanceID: 0}
+  - enemigoNivel1TirosDobles: {instanceID: 0}
+  - enemigoNivel1Estatico: {instanceID: 0}
+  - enemigoNivel1MidBoss: {instanceID: 0}
+  - enemigoNivel1FinalBoss: {instanceID: 0}
+  - faderNiveles: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

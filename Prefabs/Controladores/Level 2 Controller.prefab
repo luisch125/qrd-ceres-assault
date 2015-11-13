@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &114874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 421236}
+  - 114: {fileID: 11439712}
+  m_Layer: 0
+  m_Name: Level 2 Controller
+  m_TagString: LevelController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421236
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11439712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c80dbaa486516f47abf5470bd77fe67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidadEnemigos: 4
+  enemigoNivel1Basico: {fileID: 136960, guid: e55e2707a6918644faf568091942b017, type: 2}
+  enemigoNivel1Basico2: {fileID: 136960, guid: b4548699f81255540bc958f2629d46f6, type: 2}
+  enemigoNivel1Sentry: {fileID: 146132, guid: f2ca496b3b7d66a478d61cbc8ce87e1c, type: 2}
+  enemigoNivel1TirosDobles: {fileID: 187040, guid: 4e962fee209eb564aa6f2789b64d39d9,
+    type: 2}
+  enemigoNivel1Estatico: {fileID: 136960, guid: 0ff5d8bf1e22efd428de3158b4072e52,
+    type: 2}
+  enemigoNivel1FormaV: {fileID: 136960, guid: f614d043bf288604c882a3eed13b457d, type: 2}
+  enemigoNivel1MidBoss: {fileID: 135768, guid: 89a393542c3c93b4abf3a908a30ba255, type: 2}
+  enemigoNivel1FinalBoss: {fileID: 135768, guid: 6539fd209a14f4549aec3d648724fa2d,
+    type: 2}
+  faderNiveles: {fileID: 0}
+  hazard: {fileID: 136960, guid: 0ff5d8bf1e22efd428de3158b4072e52, type: 2}
+  debris: {fileID: 126396, guid: 5216f159d98df8648be97180d043be42, type: 2}
+  spawnValues: {x: 6, y: 0, z: 16}
+  minEscala: .5
+  maxEscala: 1.20000005
+  hazardCount: 2
+  spawnWait: .5
+  startWait: 1
+  waveWait: 3
+  DronesApoyo:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 114874}
+  m_IsPrefabParent: 1

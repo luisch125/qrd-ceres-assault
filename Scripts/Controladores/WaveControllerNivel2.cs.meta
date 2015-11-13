@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 9c80dbaa486516f47abf5470bd77fe67
+timeCreated: 1444077420
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - enemigoNivel1Basico: {fileID: 136960, guid: e55e2707a6918644faf568091942b017,
+      type: 2}
+  - enemigoNivel1Basico2: {fileID: 136960, guid: b4548699f81255540bc958f2629d46f6,
+      type: 2}
+  - enemigoNivel1Sentry: {fileID: 135768, guid: 2246a22523e258d47b70f4f2f0a9cc27,
+      type: 2}
+  - enemigoNivel1TirosDobles: {fileID: 187040, guid: 4e962fee209eb564aa6f2789b64d39d9,
+      type: 2}
+  - enemigoNivel1Estatico: {fileID: 136960, guid: b4548699f81255540bc958f2629d46f6,
+      type: 2}
+  - enemigoNivel1MidBoss: {fileID: 135768, guid: 89a393542c3c93b4abf3a908a30ba255,
+      type: 2}
+  - enemigoNivel1FinalBoss: {fileID: 135768, guid: 89a393542c3c93b4abf3a908a30ba255,
+      type: 2}
+  - faderNiveles: {fileID: 105286, guid: cfff85535fbe3964392da4f20a95453b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
