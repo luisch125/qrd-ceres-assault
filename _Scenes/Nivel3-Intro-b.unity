@@ -85,6 +85,12 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &234325341 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11493616, guid: 18cff4bb78d51bb488c4ecfe35fb9d70,
+    type: 2}
+  m_PrefabInternal: {fileID: 821388347}
+  m_Script: {fileID: 11500000, guid: 7ad4411776e8dc942beb88f3283066fc, type: 3}
 --- !u!1 &378259944
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +102,7 @@ GameObject:
   - 222: {fileID: 378259948}
   - 114: {fileID: 378259947}
   - 114: {fileID: 378259946}
+  - 82: {fileID: 378259949}
   m_Layer: 0
   m_Name: "Bot\xF3n informe situaci\xF3n"
   m_TagString: Untagged
@@ -140,12 +147,12 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_NormalColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
-    m_FadeDuration: .100000001
+    m_FadeDuration: .200000003
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -156,10 +163,21 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1775538744}
+  m_TargetGraphic: {fileID: 378259947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 234325341}
+        m_MethodName: SitRepLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &378259947
@@ -195,6 +213,158 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 378259944}
+--- !u!82 &378259949
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378259944}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 535d0fc7773fbdd42b3dcfdd8b31c075, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1001 &405447015
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -157
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_Pivot.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434016, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+      propertyPath: m_Pivot.y
+      value: .5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 10cf4ddcaf60af64896c9fbaef6e0b2a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &719277104
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +503,64 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807344917}
+--- !u!1001 &821388347
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 193.237274
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 451.006836
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10.7975464
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466428, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 171010, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: m_Name
+      value: Nivel3-IntroBController
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493616, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: sitRepButton
+      value: 
+      objectReference: {fileID: 378259944}
+    - target: {fileID: 11493616, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: campRepButton
+      value: 
+      objectReference: {fileID: 2048581017}
+    - target: {fileID: 11493616, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+      propertyPath: continuarButton
+      value: 
+      objectReference: {fileID: 1617942676}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 18cff4bb78d51bb488c4ecfe35fb9d70, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &840281981
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,8 +920,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_NormalColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
@@ -708,7 +936,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1775538744}
+  m_TargetGraphic: {fileID: 1617942679}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1187,12 +1415,12 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_NormalColor: {r: .800000012, g: .800000012, b: .800000012, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
-    m_FadeDuration: .100000001
+    m_FadeDuration: .200000003
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -1203,10 +1431,21 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1775538744}
+  m_TargetGraphic: {fileID: 2048581020}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 234325341}
+        m_MethodName: CampRepLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2048581020
